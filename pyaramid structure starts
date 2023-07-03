@@ -1,0 +1,54 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+#ifndef ONLINE_JUDGE
+	// for getting input from input.txt
+	freopen("input1.txt", "r", stdin);
+	// for writing output to output.txt
+	freopen("output1.txt", "w", stdout);
+#endif
+
+
+	int rows;
+	cin >> rows;
+
+
+	for (int i = 0; i < rows; i++) {
+
+		for (int j = 0; j < rows - i - 1 ; ++j)
+		{
+
+			cout << " ";
+
+		}
+
+		for (int k = 0; k < 2 * i + 1; ++k)
+		{
+			cout << "*";
+		}
+
+		for (int k = 0; k < rows - i - 1; ++k)
+		{
+			cout << " ";
+
+		}
+
+
+
+
+		cout << "\n";
+	}
+}
+
+
+
+
+output:
+     *     
+    ***    
+   *****   
+  *******  
+ ********* 
+***********
